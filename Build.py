@@ -1,6 +1,3 @@
-from email.mime import text
-
-
 name="Nicholas Kaguo"
 print(name)
 
