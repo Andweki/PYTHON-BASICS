@@ -44,4 +44,23 @@ print(account1.balance)
 account1.deposit(5000)  
 account1.withdraw(2500)
 
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+       
+    def start(self):
+        print(f"{self.brand} is starting.")
 
+Car1 = Vehicle("vehicle")
+Car1.start()
+
+class Car(Vehicle):
+    def __init__(self, brand, model):
+        super().__init__(brand)
+        self.model = model
+
+    def drive(self):
+        print(f"{self.brand} {self.model} is driving.")
+
+Car2 = Car("Mercedes", "Gle")
+Car2.drive()
