@@ -51,7 +51,7 @@ class Vehicle:
     def start(self):
         print(f"{self.brand} is starting.")
 
-Car1 = Vehicle("vehicle")
+Car1 = Vehicle("Toyota")
 Car1.start()
 
 class Car(Vehicle):
